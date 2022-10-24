@@ -1,0 +1,28 @@
+﻿<Window x:Class="Abastecimento_de_Combustível.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Abastecimento_de_Combustível"
+        mc:Ignorable="d"
+        Title="Abastecimento" Height="250" Width="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="5,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Grid.ColumnSpan="2" Height="17"><Run Language="pt-br" Text="Km Rodados"/></TextBlock>
+        <TextBlock Margin="5,49,121,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Valor Pago R$"/></TextBlock>
+        <TextBlock Margin="5,82,121,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Valor Pago R$"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Height="18" RenderTransformOrigin="0.593,-1.053" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Km / Litro"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="R$ / Km"/></TextBlock>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="34,12,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" TextChanged="TextBox_TextChanged"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="34,49,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="36,82,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="36,138,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="36,167,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="185" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>
